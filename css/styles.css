@@ -679,7 +679,7 @@ ul {
   align-items: center;
 }
 .form-icon {
-  fill: --light-grey;
+  fill: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -757,7 +757,6 @@ input:checked {
 }
 .mailfieldset {
   box-sizing: border-box;
-  border: none;
   width: 100%;
   height: 50px;
   display: flex;
