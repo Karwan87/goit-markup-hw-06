@@ -679,6 +679,15 @@ ul {
   align-items: center;
 }
 .form-icon {
+  fill: var(--dark-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  transition: 250ms fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-icon {
   fill: var(--white);
   display: flex;
   justify-content: center;
@@ -713,24 +722,17 @@ ul {
 }
 .conditionalfieldset {
   position: relative;
-  border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  padding: 5px;
+  border-radius: 4px;
+  padding: 0;
   height: 120px;
   margin-top: 40px;
-  fill: #212121;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.conditionalfieldset:has(input:focus) {
-  border: 1px solid var(--blue);
-}
-.conditionalfieldset:has(input:focus) .form-icon {
-  fill: var(--blue);
+  transition: border 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .legal-checkbox {
   border: 0;
@@ -751,10 +753,10 @@ input:checked {
 }
 .checkbox {
   visibility: hidden;
-  z-index: 0;
   position: relative;
   margin-bottom: 30px;
 }
+
 .mailfieldset {
   box-sizing: border-box;
   width: 100%;
@@ -866,10 +868,11 @@ input:checked {
   cursor: pointer;
 }
 textarea {
-  position: absolute;
-  width: 448px;
-  align-items: left;
-  text-align: left;
-  align-content: left;
-  justify-content: left;
+  width: 100%;
+  border: none;
+  resize: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
