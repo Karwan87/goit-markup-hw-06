@@ -725,7 +725,6 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 0;
-  height: 120px;
   margin-top: 40px;
   font-weight: 400;
   font-size: 12px;
@@ -734,29 +733,20 @@ ul {
   color: #757575;
   transition: border 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.legal-checkbox {
-  border: 0;
+
+.checkbox {
   position: relative;
-  justify-content: left;
+  left: 16px;
+  top: -5px;
+  visibility: visible;
+  margin-top: 20px;
   fill: var(--white);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.legal-checkbox:has(input:focus) {
-  border: 1px solid var(--blue);
-}
-.legal-checkbox:has(input:focus) .form-icon {
+.checkbox:has(input:checked) {
+  visibility: visible;
   fill: var(--blue);
 }
-input:checked {
-  opacity: 1;
-}
-.checkbox {
-  visibility: hidden;
-  position: relative;
-  margin-bottom: 30px;
-}
-
 .mailfieldset {
   box-sizing: border-box;
   width: 100%;
@@ -842,6 +832,7 @@ input:checked {
 .rodo {
   font-family: "Roboto";
   font-style: normal;
+  margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -852,7 +843,6 @@ input:checked {
   justify-content: center;
   justify-items: center;
   left: 77px;
-  margin-top: 20px;
 }
 .rodo-box {
   display: flex;
