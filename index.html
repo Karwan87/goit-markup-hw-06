@@ -280,7 +280,7 @@
 
               <form class="footer-form">
   <fieldset class="mailfieldset">
-  <input type="email" placeholder="E-mail" id="mail"/>
+  <input type="email" placeholder="E-mail" name="mail" id="mail"/>
 </fieldset>
 <div class="newsletter-btn-text" type="submit">
 <button class="newsletter-btn-text"> Zapisz się<svg class="footer-form-icon" width="24px" height="24px"><use href="./images/SVG/icons.svg#icon-icon-send">
@@ -301,7 +301,7 @@
       <svg class="form-icon" height="18px" width="18px" title>
         <use xlink:href="./images/SVG/icons.svg#icon-person-black" ></use>
       </svg>
-      <input type="text" id="name" />
+      <input type="text" name="name" id="name" />
     </fieldset>
 
     <fieldset class="fieldset">
@@ -309,15 +309,15 @@
       <svg class="form-icon" height="18px" width="18px" title>
         <use xlink:href="./images/SVG/icons.svg#icon-phone-black"></use>
       </svg>
-      <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" />
+      <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" />
     </fieldset>
 
     <fieldset class="fieldset">
-      <label for="mail">E-mail</label>
+      <label for="email">E-mail</label>
       <svg class="form-icon" height="18px" width="18px" title>
         <use xlink:href="./images/SVG/icons.svg#icon-email-black"></use>
       </svg>
-      <input type="email" id="mail" />
+      <input type="email" name="name" id="email" />
     </fieldset>
 
     <fieldset class="conditionalfieldset">
@@ -326,7 +326,7 @@
      </fieldset>
 
     <div class="rodo-box">
-      <span><input class="checkbox" type="checkbox" id="legal" />
+      <span><input class="checkbox" type="checkbox" name="legal" id="legal" />
       <svg class="icon" title><use xlink:href="/images/SVG/icons.svg#icon-Vector" width="16px" height="15px"></use></svg></span>
       <p class="rodo">Oświadczam iż akcecptuję <a class="regulamine">Regulamin</a> i <a class="privacy">Politykę Prywatności.</a>
       </p>
