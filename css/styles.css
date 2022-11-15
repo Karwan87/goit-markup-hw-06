@@ -539,9 +539,7 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon:hover {
-  fill: var(--white);
-}
+
 .icon-box {
   background: #f5f4fa;
   width: 270px;
@@ -735,15 +733,15 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .conditionalfieldset:has(textarea:focus) {
+  outline: 0;
   border: 1px solid var(--blue);
 }
 
 .checkbox {
   position: relative;
-  left: 16px;
-  top: -5px;
-  visibility: visible;
-  z-index: 1;
+  left: 14px;
+  top: 8px;
+  visibility: hidden;
   opacity: 0;
   margin-top: 20px;
   fill: var(--white);
@@ -753,10 +751,25 @@ ul {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color var(--white) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox:checked + .icon {
+.svg-checkbox {
+  position: absolute;
+  visibility: visible;
+  left: 0;
+  width: 16px;
+  height: 15px;
+  justify-content: center;
+}
+.icon:hover {
   background-color: var(--blue);
   fill: var(--white);
   border-color: var(--light-grey);
+  visibility: visible;
+}
+.input:checked .icon {
+  background-color: var(--blue);
+  fill: var(--white);
+  border-color: var(--light-grey);
+  visibility: visible;
 }
 .mailfieldset {
   box-sizing: border-box;
@@ -823,22 +836,7 @@ ul {
 .footer-form input:focus {
   outline: 0;
 }
-.icon {
-  width: 16px;
-  height: 16px;
-  margin-top: 25px;
-  left: 54px;
-  background: #2196f3;
-  border-radius: 2px;
-  position: absolute;
-  font-size: 14px;
-  background: var(--white);
-  fill: var(--white);
-  border: 0.2px solid var(--dark-white);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .rodo {
   font-family: "Roboto";
   font-style: normal;
@@ -856,6 +854,23 @@ ul {
 }
 .rodo-box {
   display: flex;
+  width: 350px;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-top: 25px;
+  left: 54px;
+  background: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  font-size: 14px;
+  background: var(--white);
+  fill: var(--white);
+  border: 0.2px solid var(--dark-white);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .regulamine {
   text-decoration: underline;
