@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css" />
+    <link rel="stylesheet " href="./normalizer.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -297,7 +297,7 @@
     Zostaw swoje dane w formularzu poniżej
 
     <fieldset class="fieldset">
-      <label for="name">Imie</label>
+      <label class="fieldset-window"  for="name">Imie</label>
       <svg class="form-icon" height="18px" width="18px" title>
         <use xlink:href="./images/SVG/icons.svg#icon-person-black" ></use>
       </svg>
@@ -305,7 +305,7 @@
     </fieldset>
 
     <fieldset class="fieldset">
-      <label for="phone">Phone</label>
+      <label class="fieldset-window"  for="phone">Phone</label>
       <svg class="form-icon" height="18px" width="18px" title>
         <use xlink:href="./images/SVG/icons.svg#icon-phone-black"></use>
       </svg>
@@ -313,7 +313,7 @@
     </fieldset>
 
     <fieldset class="fieldset">
-      <label for="email">E-mail</label>
+      <label class="fieldset-window"  for="email">E-mail</label>
       <svg class="form-icon" height="18px" width="18px" title>
         <use xlink:href="./images/SVG/icons.svg#icon-email-black"></use>
       </svg>
@@ -321,18 +321,22 @@
     </fieldset>
 
     <fieldset class="conditionalfieldset">
-      <label for="komentarz">Komentarz</label>
+      <label class="fieldset-window" for="komentarz">Komentarz</label>
       <textarea name="komentarz" type="komentarz" id="komentarz" rows="5" placeholder="Wprowadź tekst"></textarea>
   
      </fieldset>
 
-     <div class="rodo-box">
-      <span><input class="checkbox" type="checkbox" name="legal" id="legal" />
-      <svg class="icon" title><use xlink:href="./images/SVG/icons.svg#icon-vector" width="16px" height="15px"></use></svg></span>
-      <p class="rodo">Oświadczam iż akcecptuję <a class="regulamine">Regulamin</a> i <a class="privacy">Politykę Prywatności.</a>
-      </p>
-    </div>
-    
+     <label class="rodo-box" for="legal">
+        <input class="checkbox" type="checkbox" name="legal" id="legal" />
+      <svg class="icon" title>
+        <use xlink:href="./images/SVG/icons.svg#icon-vector" width="16px" height="15px">
+        </use>
+      </svg>
+    <label class="rodo" for="legal">Oświadczam iż akceptuję 
+        <a class="regulamine"> Regulamin</a> i 
+        <a class="privacy"> Politykę Prywatności.</a></label>
+      </label>
+
     <button class="text" type="submit">
       Wyślij
     </button></div>
